@@ -748,6 +748,18 @@ a.entry__title:hover { color: var(--forest-600); }
   color: var(--text-secondary);
 }
 
+.form-fail {
+  display: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--feedback-danger);
+  margin: 0;
+}
+.form-fail.is-visible { display: block; }
+
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
 .form-success {
   display: none;
   flex-direction: column;

@@ -31,9 +31,10 @@ Il sito è servito da **GitHub Pages** (branch `main`, root) con dominio
 
 ## Da fare
 
-- **Form contatti:** oggi l'invio è simulato (validazione + conferma, nessun
-  backend). Per riceverlo davvero: creare un endpoint su [Formspree](https://formspree.io)
-  e collegarlo in `assets/js/site.js` (punto segnato con un commento).
+- ~~Form contatti~~ **Fatto:** il form invia tramite [Formspree](https://formspree.io)
+  (ID in `assets/js/site.js`, costante `FORMSPREE_ID`). Honeypot `_gotcha` contro
+  lo spam; in caso di errore di rete il form mostra un avviso con l'email di
+  fallback. Le richieste arrivano nella casella collegata all'account Formspree.
 - **Articoli:** 5 voci dell'indice sono «In preparazione». Quando un articolo è
   pronto: duplicare `linee-guida-unesco.html`, sostituire i contenuti IT/EN, e
   trasformare la voce dell'indice in link (come la voce UNESCO).

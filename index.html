@@ -226,6 +226,8 @@
 
       <div class="card" data-contact-card>
         <form class="form" novalidate>
+          <input type="hidden" name="_subject" value="Nuova richiesta dal sito Iphigenai">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field">
             <label class="field__label" for="f-name"><span data-lang="it">Nome e cognome</span><span data-lang="en">Full name</span></label>
             <input type="text" id="f-name" name="name" placeholder="Maria Rossi" autocomplete="name">
@@ -262,6 +264,7 @@
             <span class="field__error"><span data-lang="it">Il consenso è necessario per poterti ricontattare.</span><span data-lang="en">Consent is required so that we can get back to you.</span></span>
           </div>
           <button type="submit" class="btn btn--primary btn--lg btn--full"><span data-lang="it">Invia richiesta</span><span data-lang="en">Send request</span></button>
+          <p class="form-fail" role="alert"><span data-lang="it">Non siamo riusciti a inviare la richiesta. Riprova tra poco, oppure scrivici direttamente a </span><span data-lang="en">We could not send your request. Please try again shortly, or write to us directly at </span><span data-email-text></span>.</p>
         </form>
 
         <div class="form-success">

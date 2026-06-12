@@ -2,6 +2,10 @@
 (function () {
   'use strict';
 
+  /* ID del form Formspree (formspree.io → Forms → il codice dopo /f/).
+     Finché è vuoto, l'invio resta simulato (solo conferma a schermo). */
+  var FORMSPREE_ID = 'maqpakva';
+
   /* ---------- Lingua (IT/EN, ricordata in localStorage) ---------- */
   var root = document.documentElement;
 
@@ -69,9 +73,30 @@
 
     if (!ok) return;
 
-    /* Prototipo: l'invio è simulato. Collegare qui un backend
-       (es. Formspree) quando sarà disponibile. */
-    card.classList.add('is-sent');
+    if (!FORMSPREE_ID) {
+      /* Nessun backend configurato: conferma simulata. */
+      card.classList.add('is-sent');
+      return;
+    }
+
+    var btn = form.querySelector('button[type="submit"]');
+    var failNote = card.querySelector('.form-fail');
+    if (failNote) failNote.classList.remove('is-visible');
+    btn.disabled = true;
+
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      form.reset();
+      card.classList.add('is-sent');
+    }).catch(function () {
+      if (failNote) failNote.classList.add('is-visible');
+    }).then(function () {
+      btn.disabled = false;
+    });
   });
 
   form.querySelectorAll('input, select, textarea').forEach(function (input) {
