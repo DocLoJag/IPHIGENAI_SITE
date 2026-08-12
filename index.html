@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Iphigenai — Il diario · Note sull'IA nell'educazione</title>
-<meta name="description" content="Come l'intelligenza artificiale sta cambiando lo studio e la scuola — letto con calma, fonti alla mano. Note per scuole e famiglie.">
-<meta property="og:title" content="Iphigenai — Il diario">
-<meta property="og:description" content="Note sull'IA nell'educazione, per scuole e famiglie. Pubblichiamo quando abbiamo qualcosa da dire.">
+<title>IphigenAI — Tutor con intelligenza artificiale per studenti</title>
+<meta name="description" content="Un tutor IA per studenti delle scuole superiori che guida al ragionamento senza dare risposte pronte. Personalizzato, supervisionato, pensato per i minori. Si prova su invito.">
+<meta property="og:title" content="IphigenAI — Tutor IA per studenti">
+<meta property="og:description" content="Un tutor che non dà la risposta: aiuta a trovarla. Per studenti delle superiori, su invito.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iphigenai.com/">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -15,195 +15,160 @@
 <body id="top">
 
   <!-- ============ HEADER ============ -->
+  <!-- Predisposizione EN: quando servirà la versione inglese, duplicare i
+       nodi marcati data-lang="it" con data-lang="en" e ripristinare il
+       lang-switch (markup nel commento qui sotto + logica già in site.js).
+       <div class="lang-switch" role="group" aria-label="Lingua / Language">
+         <button type="button" data-set-lang="it" aria-pressed="true">It</button>
+         <button type="button" data-set-lang="en" aria-pressed="false">En</button>
+       </div>
+  -->
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="site-header__brand">
-        <img src="assets/img/iphigenai-wordmark.svg" alt="Iphigenai">
+        <img src="assets/img/iphigenai-wordmark.svg" alt="IphigenAI">
       </a>
       <div class="site-header__right">
         <nav class="site-nav">
-          <a href="index.html" data-lang="it">Il diario</a>
-          <a href="index.html" data-lang="en">The journal</a>
-          <a href="#contatti" data-lang="it">Contatti</a>
-          <a href="#contatti" data-lang="en">Contact</a>
+          <a href="#come-funziona" data-lang="it">Come funziona</a>
+          <a href="#tutor" data-lang="it">I tutor</a>
+          <a href="#sicurezza" data-lang="it">Sicurezza</a>
         </nav>
-        <div class="lang-switch" role="group" aria-label="Lingua / Language">
-          <button type="button" data-set-lang="it" aria-pressed="true">It</button>
-          <button type="button" data-set-lang="en" aria-pressed="false">En</button>
-        </div>
         <a href="#contatti" class="btn btn--primary btn--sm" data-lang="it">Scrivici</a>
-        <a href="#contatti" class="btn btn--primary btn--sm" data-lang="en">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <!-- ============ INDICE DEL DIARIO ============ -->
-  <main class="journal">
+  <main>
 
-    <!-- Testata -->
+    <!-- ============ HERO ============ -->
     <div class="masthead">
       <img src="assets/img/iphigenai-mark.svg" alt="">
       <div class="masthead__inner" data-lang="it">
-        <div class="masthead__eyebrow">Il diario · Note sull'IA nell'educazione</div>
-        <p class="masthead__statement">Come l'intelligenza artificiale sta cambiando lo studio e la scuola — letto con calma, fonti alla mano.</p>
-        <div class="masthead__motto">Pubblichiamo quando abbiamo qualcosa da dire</div>
-      </div>
-      <div class="masthead__inner" data-lang="en">
-        <div class="masthead__eyebrow">The journal · Notes on AI in education</div>
-        <p class="masthead__statement">How artificial intelligence is changing study and school — read calmly, sources in hand.</p>
-        <div class="masthead__motto">We publish when we have something to say</div>
+        <div class="masthead__eyebrow">Tutor con intelligenza artificiale · Scuole superiori</div>
+        <p class="masthead__statement">Un tutor che non dà la risposta: aiuta a trovarla.</p>
+        <div class="masthead__motto">Guidato da chi conosce lo studente davvero</div>
+        <div class="masthead__actions">
+          <a href="#contatti" class="btn btn--primary btn--lg">Chiedi di provarlo</a>
+          <a href="#come-funziona" class="btn btn--outline btn--lg">Come funziona</a>
+        </div>
       </div>
     </div>
 
-    <!-- Doppio filetto old-school -->
     <div class="double-rule"></div>
     <div class="single-rule"></div>
 
-    <div data-lang="it">
-      <!-- Voce 1 — articolo completo -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">4 giu 2026</span>
-          <span class="entry__section">Normativa</span>
-        </div>
-        <div class="entry__body">
-          <a class="entry__title" href="linee-guida-unesco.html">Cosa dicono (davvero) le linee guida UNESCO sull'IA in classe</a>
-          <p class="entry__excerpt">Se ne parla molto e le si legge poco. I punti che contano della prima guida globale sull'IA generativa nell'educazione — e cosa significano, in pratica, per scuole e famiglie.</p>
-          <a class="entry__read" href="linee-guida-unesco.html">Leggi <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-      <!-- Voce 2 -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">21 mag 2026</span>
-          <span class="entry__section">Famiglie</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Mio figlio usa ChatGPT per i compiti. E adesso?</h2>
-          <p class="entry__excerpt">Vietare, ignorare o sedersi accanto? Una guida pratica per genitori che non vogliono fare né i poliziotti né i complici.</p>
-          <span class="badge">In preparazione</span>
-        </div>
-      </article>
-      <!-- Voce 3 -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">7 mag 2026</span>
-          <span class="entry__section">Scuola</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Vietare l'IA a scuola funziona?</h2>
-          <p class="entry__excerpt">Dove è stato provato, il divieto totale ha soprattutto spostato l'uso fuori dalla vista. Cosa imparare dai casi più discussi.</p>
-          <span class="badge">In preparazione</span>
-        </div>
-      </article>
-      <!-- Voce 4 -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">23 apr 2026</span>
-          <span class="entry__section">Normativa</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">AI Act e minori: cosa cambia per le scuole</h2>
-          <p class="entry__excerpt">Il regolamento europeo tratta molti sistemi di IA in ambito educativo come ad alto rischio. Cosa comporta per chi li adotta — e per chi li subisce.</p>
-          <span class="badge">In preparazione</span>
-        </div>
-      </article>
-      <!-- Voce 5 -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">9 apr 2026</span>
-          <span class="entry__section">Opinioni</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Il compito a casa è morto? Non proprio.</h2>
-          <p class="entry__excerpt">Se una consegna si risolve con un prompt, il problema non è lo strumento: è la consegna. Per una difesa, esigente, del compito.</p>
-          <span class="badge">In preparazione</span>
-        </div>
-      </article>
-      <!-- Voce 6 -->
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">26 mar 2026</span>
-          <span class="entry__section">Scuola</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Cinque domande da fare prima di portare l'IA in classe</h2>
-          <p class="entry__excerpt">Chi tratta i dati? Che cosa ottimizza? Chi l'ha validato? Una checklist minima per dirigenti e docenti.</p>
-          <span class="badge">In preparazione</span>
-        </div>
-      </article>
-    </div>
+    <!-- ============ COME FUNZIONA ============ -->
+    <section id="come-funziona" class="section">
+      <div data-lang="it">
+        <div class="section__eyebrow">Come funziona</div>
+        <h2 class="section__title">Un metodo, prima che uno strumento.</h2>
+        <p class="section__lede">IphigenAI non è un chatbot qualunque a cui chiedere i compiti fatti. È un tutor costruito su una convinzione precisa: si impara facendo i passaggi, non copiandoli.</p>
 
-    <div data-lang="en">
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">4 Jun 2026</span>
-          <span class="entry__section">Policy</span>
+        <div class="features">
+          <div class="feature">
+            <div class="feature__num">01</div>
+            <h3 class="feature__title">Guida al ragionamento</h3>
+            <p class="feature__text">Il tutor non risolve l'esercizio al posto dello studente: fa domande, propone passaggi intermedi, chiede «secondo te cosa viene dopo?». La risposta arriva — ma solo dopo aver provato davvero.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">02</div>
+            <h3 class="feature__title">Adatto anche a DSA e BES</h3>
+            <p class="feature__text">Frasi brevi, un concetto alla volta, esempi concreti, passaggi numerati. È il linguaggio che si adatta allo studente, non il contrario.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">03</div>
+            <h3 class="feature__title">Perimetro educativo</h3>
+            <p class="feature__text">Niente conversazioni fuori tema: se lo studente divaga, il tutor riporta con gentilezza il discorso sullo studio. È uno strumento per imparare, non un compagno di chat.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">04</div>
+            <h3 class="feature__title">Personalizzato da un adulto di fiducia</h3>
+            <p class="feature__text">Il tutor umano di riferimento descrive lo studente — come apprende, dove si blocca, cosa lo motiva — e i tutor IA ne tengono conto in ogni conversazione, senza farlo pesare.</p>
+          </div>
         </div>
-        <div class="entry__body">
-          <a class="entry__title" href="linee-guida-unesco.html">What the UNESCO guidance on AI in the classroom (actually) says</a>
-          <p class="entry__excerpt">Much discussed, little read. The points that matter in the first global guidance on generative AI in education — and what they mean, in practice, for schools and families.</p>
-          <a class="entry__read" href="linee-guida-unesco.html">Read <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">21 May 2026</span>
-          <span class="entry__section">Families</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">My child uses ChatGPT for homework. Now what?</h2>
-          <p class="entry__excerpt">Ban it, ignore it, or sit down next to them? A practical guide for parents who want to be neither police officers nor accomplices.</p>
-          <span class="badge">In preparation</span>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">7 May 2026</span>
-          <span class="entry__section">Schools</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Does banning AI at school work?</h2>
-          <p class="entry__excerpt">Where it has been tried, a total ban has mostly pushed use out of sight. What to learn from the most debated cases.</p>
-          <span class="badge">In preparation</span>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">23 Apr 2026</span>
-          <span class="entry__section">Policy</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">The AI Act and minors: what changes for schools</h2>
-          <p class="entry__excerpt">The European regulation treats many AI systems in education as high-risk. What that means for those who adopt them — and those who undergo them.</p>
-          <span class="badge">In preparation</span>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">9 Apr 2026</span>
-          <span class="entry__section">Opinion</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Is homework dead? Not quite.</h2>
-          <p class="entry__excerpt">If an assignment can be solved with a prompt, the problem is not the tool: it is the assignment. A demanding defence of homework.</p>
-          <span class="badge">In preparation</span>
-        </div>
-      </article>
-      <article class="entry">
-        <div class="entry__meta">
-          <span class="entry__date">26 Mar 2026</span>
-          <span class="entry__section">Schools</span>
-        </div>
-        <div class="entry__body">
-          <h2 class="entry__title">Five questions to ask before bringing AI into the classroom</h2>
-          <p class="entry__excerpt">Who processes the data? What does it optimise for? Who validated it? A minimal checklist for school leaders and teachers.</p>
-          <span class="badge">In preparation</span>
-        </div>
-      </article>
-    </div>
+      </div>
+    </section>
 
-    <!-- Striscia pattern di chiusura -->
+    <!-- ============ I TUTOR ============ -->
+    <section id="tutor" class="section section--tinted">
+      <div data-lang="it">
+        <div class="section__eyebrow">I tutor</div>
+        <h2 class="section__title">Tre specialisti, un solo posto.</h2>
+        <p class="section__lede">Lo studente sceglie il tutor adatto alla materia del giorno. Ognuno ha il suo metodo, tutti condividono le stesse regole: guidare, adattarsi, non sostituirsi.</p>
+
+        <div class="tutor-grid">
+          <div class="tutor-card">
+            <div class="tutor-card__rule"></div>
+            <h3 class="tutor-card__name">Tutor Umanistico</h3>
+            <p class="tutor-card__subjects">Italiano · Storia · Filosofia · Geografia · Diritto</p>
+            <p class="tutor-card__text">Analisi del testo, struttura dei temi, nessi causali, cronologie e confronti tra autori. Per le lingue straniere alterna la lingua studiata alle spiegazioni in italiano.</p>
+          </div>
+          <div class="tutor-card">
+            <div class="tutor-card__rule"></div>
+            <h3 class="tutor-card__name">Tutor Scientifico</h3>
+            <p class="tutor-card__subjects">Matematica · Fisica · Chimica · Biologia · Scienze</p>
+            <p class="tutor-card__text">Un passaggio alla volta: prima il concetto, poi la formula, poi l'applicazione. Le formule compaiono in notazione matematica chiara, non in testo confuso.</p>
+          </div>
+          <div class="tutor-card">
+            <div class="tutor-card__rule"></div>
+            <h3 class="tutor-card__name">Tutor Test d'Ingresso</h3>
+            <p class="tutor-card__subjects">Medicina · Ingegneria · Professioni sanitarie · Altri</p>
+            <p class="tutor-card__text">Simulazioni in stile test, spiegazione dei distrattori, strategie di gestione del tempo. La difficoltà cresce con lo studente, non contro di lui.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COME SI PROVA ============ -->
+    <section id="prova" class="section">
+      <div data-lang="it">
+        <div class="section__eyebrow">Come si prova</div>
+        <h2 class="section__title">Su invito, non con un modulo di iscrizione.</h2>
+        <p class="section__lede">Non esiste una registrazione libera: gli account li creiamo noi, uno per uno, dopo esserci parlati. È una scelta — vogliamo sapere chi usa IphigenAI, e che chi lo usa sia seguito.</p>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <h3 class="step__title">Scriveteci</h3>
+              <p class="step__text">Due righe dal modulo qui sotto: chi siete e per chi cercate un tutor. Rispondiamo entro due giorni lavorativi.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <h3 class="step__title">Ci conosciamo</h3>
+              <p class="step__text">Un primo incontro senza impegno per capire se IphigenAI fa al caso vostro. Per gli studenti minorenni serve il consenso scritto dei genitori.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <h3 class="step__title">Lo studente inizia</h3>
+              <p class="step__text">Creiamo l'account, costruiamo insieme il profilo dello studente e seguiamo i primi passi. Il tutor umano resta il riferimento, l'IA lavora al suo fianco.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SICUREZZA ============ -->
+    <section id="sicurezza" class="section section--tinted">
+      <div data-lang="it">
+        <div class="section__eyebrow">Sicurezza e privacy</div>
+        <h2 class="section__title">Pensato per i minori, dalla prima riga.</h2>
+        <p class="section__lede">Lavorare con studenti minorenni impone scelte precise. Queste sono le nostre — scritte qui perché possiate chiedercene conto.</p>
+
+        <ul class="trust-list">
+          <li class="trust-list__item"><strong>Accessi controllati.</strong> Nessuna registrazione libera: ogni account è creato da noi e riconducibile a una persona che conosciamo.</li>
+          <li class="trust-list__item"><strong>Consenso informato.</strong> Per i minorenni chiediamo il consenso scritto dei genitori, con un modulo che spiega davvero cosa viene trattato e perché.</li>
+          <li class="trust-list__item"><strong>Supervisione umana.</strong> Il tutor umano di riferimento può rivedere le conversazioni e seguire i progressi: l'IA non lavora mai da sola, senza rendere conto a nessuno.</li>
+          <li class="trust-list__item"><strong>Dati trattati secondo il GDPR.</strong> Niente pubblicità, niente cessione dei dati; limiti d'uso attivi per prevenire gli abusi. Ogni modifica al profilo di uno studente lascia una traccia verificabile.</li>
+        </ul>
+      </div>
+    </section>
+
     <div class="pattern-strip"><div></div></div>
   </main>
 
@@ -213,69 +178,64 @@
     <div class="contact__inner">
       <div data-lang="it">
         <div class="contact__eyebrow">Contatti</div>
-        <h2 class="contact__title">Parliamone.</h2>
-        <p class="contact__text">Il diario è il nostro modo di fare informazione. Il lavoro vero, però, si fa caso per caso — in famiglia o in istituto. Un primo confronto è senza impegno; rispondiamo entro due giorni lavorativi.</p>
-        <a href="#" class="email-link" data-email-link data-email-text><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
-      </div>
-      <div data-lang="en">
-        <div class="contact__eyebrow">Contact</div>
-        <h2 class="contact__title">Let's talk.</h2>
-        <p class="contact__text">The journal is how we share what we know. The real work, though, happens case by case — at home or at school. A first conversation costs nothing; we reply within two working days.</p>
+        <h2 class="contact__title">Volete provarlo? Parliamone.</h2>
+        <p class="contact__text">IphigenAI si prova su invito: scriveteci chi siete e per chi cercate un tutor, e organizziamo un primo incontro conoscitivo — senza impegno. Rispondiamo entro due giorni lavorativi.</p>
         <a href="#" class="email-link" data-email-link data-email-text><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
       </div>
 
       <div class="card" data-contact-card>
         <form class="form" novalidate>
-          <input type="hidden" name="_subject" value="Nuova richiesta dal sito Iphigenai">
+          <input type="hidden" name="_subject" value="Nuova richiesta di prova dal sito IphigenAI">
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field">
-            <label class="field__label" for="f-name"><span data-lang="it">Nome e cognome</span><span data-lang="en">Full name</span></label>
+            <label class="field__label" for="f-name"><span data-lang="it">Nome e cognome</span></label>
             <input type="text" id="f-name" name="name" placeholder="Maria Rossi" autocomplete="name">
-            <span class="field__error"><span data-lang="it">Campo obbligatorio</span><span data-lang="en">This field is required</span></span>
+            <span class="field__error"><span data-lang="it">Campo obbligatorio</span></span>
           </div>
           <div class="field">
             <label class="field__label" for="f-email">Email</label>
             <input type="email" id="f-email" name="email" autocomplete="email" placeholder="nome@esempio.it">
-            <span class="field__error"><span data-lang="it">Inserisci un indirizzo email valido</span><span data-lang="en">Enter a valid email address</span></span>
+            <span class="field__error"><span data-lang="it">Inserisci un indirizzo email valido</span></span>
           </div>
           <div class="field field--select">
-            <label class="field__label" for="f-role"><span data-lang="it">Chi sei?</span><span data-lang="en">Who are you?</span></label>
+            <label class="field__label" for="f-role"><span data-lang="it">Chi sei?</span></label>
             <select id="f-role" name="role">
-              <option value="" disabled selected data-it="Seleziona…" data-en="Select…"></option>
-              <option value="genitore" data-it="Genitore o famiglia" data-en="Parent or family"></option>
-              <option value="docente" data-it="Docente" data-en="Teacher"></option>
-              <option value="dirigente" data-it="Dirigente scolastico" data-en="School leader"></option>
-              <option value="ente" data-it="Istituzione o ente" data-en="Institution or body"></option>
-              <option value="altro" data-it="Altro" data-en="Other"></option>
+              <option value="" disabled selected data-it="Seleziona…"></option>
+              <option value="genitore" data-it="Genitore o famiglia"></option>
+              <option value="studente" data-it="Studente"></option>
+              <option value="docente" data-it="Docente o tutor"></option>
+              <option value="dirigente" data-it="Dirigente scolastico"></option>
+              <option value="ente" data-it="Istituzione o ente"></option>
+              <option value="altro" data-it="Altro"></option>
             </select>
             <span class="field__chevron"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
           </div>
           <div class="field">
-            <label class="field__label" for="f-msg"><span data-lang="it">Che cosa vi preoccupa, o vi incuriosisce?</span><span data-lang="en">What worries you, or makes you curious?</span></label>
+            <label class="field__label" for="f-msg"><span data-lang="it">Per chi cercate un tutor?</span></label>
             <textarea id="f-msg" name="message" rows="3"></textarea>
-            <span class="field__hint"><span data-lang="it">Due o tre frasi sono sufficienti.</span><span data-lang="en">Two or three sentences are enough.</span></span>
+            <span class="field__hint"><span data-lang="it">Due o tre frasi sono sufficienti: classe, materie, cosa vi ha incuriosito.</span></span>
           </div>
           <div class="field">
             <label class="checkbox">
               <input type="checkbox" name="consent">
               <span class="checkbox__box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              <span class="checkbox__label"><span data-lang="it">Acconsento al trattamento dei dati secondo il GDPR.</span><span data-lang="en">I consent to data processing under the GDPR.</span></span>
+              <span class="checkbox__label"><span data-lang="it">Acconsento al trattamento dei dati secondo il GDPR.</span></span>
             </label>
-            <span class="field__error"><span data-lang="it">Il consenso è necessario per poterti ricontattare.</span><span data-lang="en">Consent is required so that we can get back to you.</span></span>
+            <span class="field__error"><span data-lang="it">Il consenso è necessario per poterti ricontattare.</span></span>
           </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--full"><span data-lang="it">Invia richiesta</span><span data-lang="en">Send request</span></button>
-          <p class="form-fail" role="alert"><span data-lang="it">Non siamo riusciti a inviare la richiesta. Riprova tra poco, oppure scrivici direttamente a </span><span data-lang="en">We could not send your request. Please try again shortly, or write to us directly at </span><span data-email-text></span>.</p>
+          <button type="submit" class="btn btn--primary btn--lg btn--full"><span data-lang="it">Invia richiesta</span></button>
+          <p class="form-fail" role="alert"><span data-lang="it">Non siamo riusciti a inviare la richiesta. Riprova tra poco, oppure scrivici direttamente a </span><span data-email-text></span>.</p>
         </form>
 
         <div class="form-success">
           <div class="callout" role="note">
             <span class="callout__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></span>
             <div class="callout__content">
-              <span class="callout__title"><span data-lang="it">Richiesta ricevuta</span><span data-lang="en">Request received</span></span>
-              <span class="callout__body"><span data-lang="it">Grazie. Vi ricontatteremo entro due giorni lavorativi per un primo incontro conoscitivo.</span><span data-lang="en">Thank you. We will be in touch within two working days to arrange a first meeting.</span></span>
+              <span class="callout__title"><span data-lang="it">Richiesta ricevuta</span></span>
+              <span class="callout__body"><span data-lang="it">Grazie. Vi ricontatteremo entro due giorni lavorativi per un primo incontro conoscitivo.</span></span>
             </div>
           </div>
-          <button type="button" class="btn btn--outline btn--md btn--full" data-form-reset><span data-lang="it">Invia un'altra richiesta</span><span data-lang="en">Send another request</span></button>
+          <button type="button" class="btn btn--outline btn--md btn--full" data-form-reset><span data-lang="it">Invia un'altra richiesta</span></button>
         </div>
       </div>
     </div>
@@ -284,7 +244,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <span class="site-footer__text"><span data-lang="it">© 2026 Iphigenai. Tutti i diritti riservati. · </span><span data-lang="en">© 2026 Iphigenai. All rights reserved. · </span><span data-email-text></span></span>
+      <span class="site-footer__text"><span data-lang="it">© 2026 IphigenAI. Tutti i diritti riservati. · </span><span data-email-text></span></span>
       <img src="assets/img/iphigenai-mark-light.svg" alt="">
     </div>
   </footer>

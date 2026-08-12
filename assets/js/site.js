@@ -23,9 +23,14 @@
     });
   }
 
+  /* Il sito per ora è solo in italiano: si forza 'it' e si ignora la
+     preferenza salvata (che resta in localStorage). Quando tornerà la
+     versione EN: ripristinare la riga con `saved` qui sotto e il markup
+     del lang-switch (commentato nell'header di index.html). */
   var saved = null;
   try { saved = localStorage.getItem('iphigenai_lang'); } catch (e) {}
-  setLang(saved === 'en' || saved === 'it' ? saved : 'it');
+  setLang('it');
+  /* setLang(saved === 'en' || saved === 'it' ? saved : 'it'); */
 
   document.querySelectorAll('.lang-switch button').forEach(function (btn) {
     btn.addEventListener('click', function () { setLang(btn.dataset.setLang); });
